@@ -1,25 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter,Route,Routes } from 'react-router-dom';
+import Upload from './pages/Upload/Upload';
+import Register from './pages/Register/Register';
+import Board from './pages/Dashboard/Board';
+import FileUpload from './pages/Upload/FileUpload';
+import NavBar from './pages/Navbar/Navbar'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <NavBar/>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/upload' element={<Upload />}></Route>
+        <Route path='/login' element={<Register />}></Route>
+        <Route path='/dashboard' element={<Board />}></Route>
+        <Route path='/file' element={<FileUpload />}></Route>
+
+
+
+      </Routes>
+    </BrowserRouter></>
+  )
 }
 
 export default App;
