@@ -1,51 +1,136 @@
+.dashboard-con {
+  width: 1140px;
+  min-height: 600px;
+  height: 80vh;
+  margin-top: 15px;
 
+  .acc-btn{
+    background-color: #1B1B1B;
+    border: 0.56px solid #323232;
+    box-shadow: 0px 4px 3.9px 0px #00000040;
+    padding: 8px 20px;
+    border-radius: 6px;
+    color: white;
+  
 
-.dashboard-con{
-    width: 1140px;
-    min-height: 600px;
-    height: 80vh;
-    margin-top: 70px;
+   
+  
+  }
+  .download-btn {
     
+    padding: 8px 20px;
+    border-radius: 6px;
+    color: white;
+    border:none;
+    background: linear-gradient(100.72deg, #252525 -111.84%, #FF222B 97.32%);
+   margin-left: 10px;
+      
+  
+  }
 }
 
 .complexity-card {
-    background-color:#1B1B1B;
-    height: 160px;
-    border-radius: 15px;
-  }
+  background-color: #1B1B1B;
+  height: 160px;
+  border-radius: 15px;
+}
 
-  .accelerator-card{
-    
-    height: 160px;
-    border-radius: 15px;
-    background: linear-gradient(122.08deg, #252525 -15.21%, #FF222B 136.72%);
-    border: none;
+.accelerator-card {
 
-  }
+  height: 160px;
+  border-radius: 15px;
+  background: linear-gradient(122.08deg, #252525 -15.21%, #FF222B 136.72%);
+  border: none;
+  padding: 10px;
 
-  .piechart{
+  .accelerator-details {
     display: flex;
-  }
-
-  .dashboard-row{
-    margin-top: 10px;
-  }
-
-  .pie{
-    
-      border-radius: 15px;
-      background: #1b1b1b;
-      margin-top: 10px;
-  }
-  .pie-data{
-    position: absolute;
-    left: 400px;
-    top: 130px;
-    width: 200px;
-    color:#7E7E7E;
-    gap: 2px;
-    display: flex
-;
     flex-direction: column;
-    align-items: flex-start;
   }
+
+  .toggle-container {
+    width: 40px;
+    height: 15px;
+    background-color: #EFEFEF;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s;
+  }
+
+  .toggle-container.on {
+    background-color: green;
+  }
+
+  .toggle-circle {
+    width: 8px;
+    height: 8px;
+    background-color: #2C2929;
+    border-radius: 50%;
+    position: absolute;
+    left: 2px;
+    transition: left 0.3s;
+  }
+
+  .toggle-container.on .toggle-circle {
+    left: calc(100% - 10px);
+  }
+
+  .toggle-label {
+    font-size: 10px;
+    color: black;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .toggle-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+.logo-name {
+  font-size: 20px;
+  font-weight: 600;
+  color:white;
+}
+.acc-time{
+  font-size: 55px;
+  font-weight: 600;
+  color: white;
+}
+
+}
+
+.piechart {
+  display: flex;
+}
+
+.dashboard-row {
+  /* margin-top: 10px; */
+}
+
+.pie {
+
+  border-radius: 15px;
+  background: #1b1b1b;
+ height: 390px;
+ width: 647px;
+}
+
+.pie-data {
+  position: absolute;
+  left: 400px;
+  top: 130px;
+  width: 200px;
+  color: #7E7E7E;
+  gap: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
