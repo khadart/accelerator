@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.css';
+import './Board.css';
 import Avatar from '../../components/Process/Avatar';
 
 const ComplexityLevel = () => {

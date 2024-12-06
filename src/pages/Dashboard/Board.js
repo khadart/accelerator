@@ -1,8 +1,15 @@
 import React from "react";
 import "./Board.css";
 import ComplexityLevel from "./ComplexityLevel";
-import Card from "./Card";
-import Piechart from "./PieChart";
+import Chart from './Chart'
+import Accelerator from "./Accelerator";
+import NumberOfMachines from "../../components/Process/NumberOfMachines";
+import NumberOfPars from "../../components/Process/NumberOfPars";
+import NumberOfStarterProcess from "../../components/Process/NumberOfStarterProcess";
+import NumberOfConnections from "../../components/Process/NumberOfConnections";
+import NumberOfVariables from "../../components/Process/NumberOfVariables";
+import NumberOfProcesses from "../../components/Process/NumberOfProcesses";
+import NumberOfFunction from "../../components/Process/NumberOfFunction";
 
 
 const Board = () => {
@@ -11,58 +18,55 @@ const Board = () => {
       <div className="row">
         <div className="col-lg-7">
           <ComplexityLevel />
+
         </div>
         <div className="col-lg-5">
-          <Card
-            title="Time Takes For Migration"
-            value="36hr"
-            className="bg-danger text-white"
-          />
+        <Accelerator/>
         </div>
       </div>
       <div className="row">
         <div className="col-lg-5">
-          <div className="row">
+          <div className="row dashboard-row">
             <div className="col-lg-6" >
-            <Card title="Number of Machines" value="36" />
+          <NumberOfMachines/>
             </div>
             <div className="col-lg-6">
-          <Card title="Number of PARs" value="22" />
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-lg-6">
-          <Card title="Starter Processes" value="16" />
-
-            </div>
-            <div className="col-lg-6">
-          <Card title="Connections" value="12" />
-
+        <NumberOfPars/>
             </div>
           </div>
-          <div className="row">
+          <div className="row dashboard-row">
             <div className="col-lg-6">
-          <Card title="Variables" value="28" />
+          <NumberOfStarterProcess/>
 
             </div>
             <div className="col-lg-6">
-          <Card title="Processes" value="48" />
+        <NumberOfConnections/>
 
             </div>
           </div>
-          <div className="row">
+          <div className="row dashboard-row">
+            <div className="col-lg-6">
+       <NumberOfVariables/>
+
+            </div>
+            <div className="col-lg-6">
+        <NumberOfProcesses/>
+
+            </div>
+          </div>
+          <div className="row dashboard-row">
          
           <div className="col-lg-6">
-          <Card title="Processes" value="48" />
+        <NumberOfFunction/>
           </div>
           
           <div className="col-lg-6">
-          <Card title="Processes" value="48" />
+         <NumberOfConnections/>
           </div>
           </div>
         </div>
-        <div className="col-lg-7">
-        <Piechart />
+        <div className="col-lg-7 pie">
+        <Chart />
         </div>
       </div>
      
@@ -71,3 +75,4 @@ const Board = () => {
 };
 
 export default Board;
+

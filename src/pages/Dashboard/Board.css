@@ -4,6 +4,48 @@
     width: 1140px;
     min-height: 600px;
     height: 80vh;
-    margin-top: 100px;
+    margin-top: 70px;
     
 }
+
+.complexity-card {
+    background-color:#1B1B1B;
+    height: 160px;
+    border-radius: 15px;
+  }
+
+  .accelerator-card{
+    
+    height: 160px;
+    border-radius: 15px;
+    background: linear-gradient(122.08deg, #252525 -15.21%, #FF222B 136.72%);
+    border: none;
+
+  }
+
+  .piechart{
+    display: flex;
+  }
+
+  .dashboard-row{
+    margin-top: 10px;
+  }
+
+  .pie{
+    
+      border-radius: 15px;
+      background: #1b1b1b;
+      margin-top: 10px;
+  }
+  .pie-data{
+    position: absolute;
+    left: 400px;
+    top: 130px;
+    width: 200px;
+    color:#7E7E7E;
+    gap: 2px;
+    display: flex
+;
+    flex-direction: column;
+    align-items: flex-start;
+  }

@@ -6,6 +6,7 @@ import Register from './pages/Register/Register';
 import Board from './pages/Dashboard/Board';
 import FileUpload from './pages/Upload/FileUpload';
 import NavBar from './pages/Navbar/Navbar'
+import Dashboard from './pages/Dashboard/Dash'
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
         <Route path='/login' element={<Register />}></Route>
         <Route path='/dashboard' element={<Board />}></Route>
         <Route path='/file' element={<FileUpload />}></Route>
-
+<Route path='/dash' element={<Dashboard/>}></Route>
 
 
       </Routes>
